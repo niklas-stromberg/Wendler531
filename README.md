@@ -1,16 +1,15 @@
 Workout Program - Wendler 531
-==========================
-Maven Project using Spring Boot with MySQL database.
-Frontend using JavaScript/JQuery and AJAX.
-Web Services using REST.
+==========================<br/>
+Maven Project using Spring Boot with MySQL database.<br/>
+Frontend using JavaScript/JQuery and AJAX.<br/>
+Web Services using REST.<br/>
 
-<br/><br/>
-<table style="border: 0px;">
-<tr>
-<td><img width="200px" src="screenshot1.png" /></td>
-<td><img width="200px" src="screenshot2.png" /></td>
-</table>
+
+<img width="200px" src="screenshot1.png" /> 
+<br/>
+<img width="200px" src="screenshot2.png" />
 
 
 
-<br/><br/>
+
+<br/>
