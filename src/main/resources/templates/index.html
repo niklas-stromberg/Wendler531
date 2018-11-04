@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+ 
+<html>
+<head>
+      <title>Wendler 5/3/1</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="/js/postrequest.js"></script>
+      <script src="/js/getrequest.js"></script>
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#tableWeek1 {
+    width: 100%;
+    background-color: #e2efd9;
+}
+table#tableWeek2 {
+    width: 100%;
+    background-color: #deeaf6;
+}
+table#tableWeek3 {
+    width: 100%;
+    background-color: #9acea1;
+}
+#mainText {
+text-shadow: 3px 2px 3px rgba(255,255,255,.2), 2px 2px 2px rgba(28,110,164,0);
+}
+    </style>
+
+
+</head>
+<body>
+
+
+
+
+<div class="container">
+    <h2 id="mainText">Wendler 5/3/1</h2>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#input">Input</a></li>
+        <li><a data-toggle="tab" href="#week1">Week 1</a></li>
+        <li><a data-toggle="tab" href="#week2">Week 2</a></li>
+        <li><a data-toggle="tab" href="#week3">Week 3</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="input" class="tab-pane fade in active">
+            <div class="container">
+                <h1></h1>
+                <div id="postdiv">
+                    <form id="inputForm">
+                        <label>Username</label>
+                        <input type="text" id="username" class="form-control" maxlength="25" size="4" width="48" style="width: 150px; " />
+                        <label style="margin-top:20px;">Start date</label>
+                        <input type="date" id="startdate" class="form-control" maxlength="4" size="4" width="48" style="width: 150px; " />
+                        <label style="margin-top:20px;">Bench Press</label>
+                        <input type="text" id="benchpress" class="form-control" placeholder="Bench Press" maxlength="4" size="4" width="48" style="width: 150px;" />
+                        <label style="margin-top:10px;">Military Press</label>
+                        <input type="text" id="militarypress" class="form-control" placeholder="Military Press" maxlength="4" size="4" width="48" style="width: 150px;"/>
+                        <label style="margin-top:10px;">Squat</label>
+                        <input type="text" id="squat" class="form-control" placeholder="Squat" maxlength="4" size="4" width="48" style="width: 150px;" />
+                        <label style="margin-top:10px;">Deadlift</label>
+                        <input type="text" id="deadlift" class="form-control" placeholder="Deadlift" maxlength="4" size="4" width="48" style="width: 150px;"/>
+                        <label style="margin-top:10px;">Front Squat</label>
+                        <input type="text" id="frontsquat" class="form-control" placeholder="Front Squat" maxlength="4" size="4" width="48" style="width: 150px;" />
+                        <label style="margin-top:10px;">Stiff Leg Deadlift</label>
+                        <input type="text" id="stifflegdeadlift" class="form-control" placeholder="Stiff Leg Deadlift" maxlength="4" size="4" width="48" style="width: 150px;"/>
+                        <label style="margin-top:10px;">Close Grip Bench Press</label>
+                        <input type="text" id="closegripbenchpress" class="form-control" placeholder="Close Grip Bench Press" maxlength="4" size="4" width="48" style="width: 150px;" />
+                        <label style="margin-top:10px;">Incline Press</label>
+                        <input type="text" id="inclinebenchpress" class="form-control" placeholder="Incline Bench Press" maxlength="4" size="4" width="48" style="width: 150px;"/>
+
+
+                        <button type="submit" id="postBtn" class="btn btn-primary" width="48" style="margin-top:20px;">Save</button>
+                    </form>
+                </div>
+                <div id="postResultDiv">
+                </div>
+                <br/>
+            </div>
+        </div>
+        <div id="week1" class="tab-pane fade">
+            <h3>Week 1</h3>
+
+            <table id="tableWeek1">
+                <thead>
+                <tr>
+                    <th width="200">Exercise</th>
+                    <th width="150">Set 1</th>
+                    <th width="150">Set 2</th>
+                    <th width="150">Set 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="test">
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div id="week2" class="tab-pane fade">
+            <h3>Week 2</h3>
+            <table id="tableWeek2">
+                <thead>
+                <tr>
+                    <th width="200">Exercise</th>
+                    <th width="150">Set 1</th>
+                    <th width="150">Set 2</th>
+                    <th width="150">Set 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="test2">
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="week3" class="tab-pane fade">
+            <h3>Week 3</h3>
+            <table id="tableWeek3">
+                <thead>
+                <tr>
+                    <th width="200">Exercise</th>
+                    <th width="150">Set 1</th>
+                    <th width="150">Set 2</th>
+                    <th width="150">Set 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr id="test3">
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
