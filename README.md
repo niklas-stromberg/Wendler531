@@ -4,7 +4,8 @@
 Maven Project using Spring Boot with MySQL database.<br/>
 Frontend using JavaScript/JQuery and AJAX.<br/>
 Web Services using REST.<br/>
-
+<br/>
+<br/>
 
 <img width="200px" src="screenshot1.png" /> 
 <br/>
