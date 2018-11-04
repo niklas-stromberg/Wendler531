@@ -1,4 +1,4 @@
-Workout Program - Wendler 531
+Workout Program - Wendler 531<br/>
 ==========================<br/>
 Maven Project using Spring Boot with MySQL database.<br/>
 Frontend using JavaScript/JQuery and AJAX.<br/>
