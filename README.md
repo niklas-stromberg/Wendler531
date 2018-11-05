@@ -7,7 +7,7 @@ Web Services using REST.<br/>
 <br/>
 <br/>
 
-<img width="200px" src="screenshot1.png" /> 
+<img src="screenshot1.png" /> 
 <br/>
 <img  src="screenshot2.png" />
 
